@@ -1,0 +1,29 @@
+﻿@model RegistarViewM
+@{
+    Layout = "~/Views/Shared/_LayoutLR.cshtml";
+}
+
+<div class="container">
+    <form method="post">
+    <div class=" text-danger" asp-validation-summary="ModelOnly"></div>
+    <div class="mb-3">
+            <label asp-for="Email"></label>
+            <input type="email" class="form-control" asp-for="Email" autocomplete="" placeholder="Enter Email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+            <label asp-for="Password"></label>
+            <input type="password" class="form-control" asp-for="Password"  placeholder="Enter Password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+        <div class="mb-3">
+            <label asp-for="ConfirmPassword"></label>
+            <input type="password" class="form-control" asp-for="ConfirmPassword"placeholder="Enter Confirm Password" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+        <div class="float-end">
+            <button type="submit" class="btn btn-primary m-2">Register</button>
+        </div>
+    </form>
+</div>
+ 
