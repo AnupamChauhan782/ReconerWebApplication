@@ -1,0 +1,13 @@
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\bin\Debug\net8.0\ModelData.deps.json
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\bin\Debug\net8.0\ModelData.dll
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\bin\Debug\net8.0\ModelData.pdb
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\obj\Debug\net8.0\ModelData.GeneratedMSBuildEditorConfig.editorconfig
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\obj\Debug\net8.0\ModelData.AssemblyInfoInputs.cache
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\obj\Debug\net8.0\ModelData.AssemblyInfo.cs
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\obj\Debug\net8.0\ModelData.csproj.CoreCompileInputs.cache
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\obj\Debug\net8.0\ModelData.sourcelink.json
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\obj\Debug\net8.0\ModelData.dll
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\obj\Debug\net8.0\refint\ModelData.dll
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\obj\Debug\net8.0\ModelData.pdb
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\obj\Debug\net8.0\ref\ModelData.dll
+D:\MVC\ReCornerApplication\ReCornerApplication\ModelData\obj\Debug\net8.0\ModelData.csproj.AssemblyReference.cache
