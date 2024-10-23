@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|d:\\mvc\\recornerapplication\\recornerapplication\\recornerapplication\\views\\teachers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|solutionrelative:recornerapplication\\views\\teachers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|d:\\mvc\\recornerapplication\\recornerapplication\\recornerapplication\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|solutionrelative:recornerapplication\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|d:\\mvc\\recornerapplication\\recornerapplication\\recornerapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|solutionrelative:recornerapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|d:\\mvc\\recornerapplication\\recornerapplication\\recornerapplication\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|solutionrelative:recornerapplication\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6089480A-4343-41F2-B6E9-6FBC26CBB7F3}|BusinessAcess\\BusinessAcess.csproj|d:\\mvc\\recornerapplication\\recornerapplication\\businessacess\\repos\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6089480A-4343-41F2-B6E9-6FBC26CBB7F3}|BusinessAcess\\BusinessAcess.csproj|solutionrelative:businessacess\\repos\\teacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|d:\\mvc\\recornerapplication\\recornerapplication\\recornerapplication\\views\\teachers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|solutionrelative:recornerapplication\\views\\teachers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|d:\\mvc\\recornerapplication\\recornerapplication\\recornerapplication\\views\\teachers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|solutionrelative:recornerapplication\\views\\teachers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|d:\\mvc\\recornerapplication\\recornerapplication\\recornerapplication\\views\\teachers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|solutionrelative:recornerapplication\\views\\teachers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6089480A-4343-41F2-B6E9-6FBC26CBB7F3}|BusinessAcess\\BusinessAcess.csproj|d:\\mvc\\recornerapplication\\recornerapplication\\businessacess\\irepos\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6089480A-4343-41F2-B6E9-6FBC26CBB7F3}|BusinessAcess\\BusinessAcess.csproj|solutionrelative:businessacess\\irepos\\iteacherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A2B62B-BEC0-4CEE-A001-408AE6F04F59}|ModelData\\ModelData.csproj|d:\\mvc\\recornerapplication\\recornerapplication\\modeldata\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A2B62B-BEC0-4CEE-A001-408AE6F04F59}|ModelData\\ModelData.csproj|solutionrelative:modeldata\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|d:\\mvc\\recornerapplication\\recornerapplication\\recornerapplication\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0246772-95D6-4D65-A9A7-C4D84854D747}|ReCornerApplication\\ReCornerApplication.csproj|solutionrelative:recornerapplication\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ReCornerApplication\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ReCornerApplication\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwDQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T10:27:58.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ITeacherService.cs",
+              "DocumentMoniker": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\BusinessAcess\\IRepos\\ITeacherService.cs",
+              "RelativeDocumentMoniker": "BusinessAcess\\IRepos\\ITeacherService.cs",
+              "ToolTip": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\BusinessAcess\\IRepos\\ITeacherService.cs",
+              "RelativeToolTip": "BusinessAcess\\IRepos\\ITeacherService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:20:14.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TeacherService.cs",
+              "DocumentMoniker": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\BusinessAcess\\Repos\\TeacherService.cs",
+              "RelativeDocumentMoniker": "BusinessAcess\\Repos\\TeacherService.cs",
+              "ToolTip": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\BusinessAcess\\Repos\\TeacherService.cs",
+              "RelativeToolTip": "BusinessAcess\\Repos\\TeacherService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAD4vykAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:15:21.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Teachers\\Create.cshtml",
+              "RelativeDocumentMoniker": "ReCornerApplication\\Views\\Teachers\\Create.cshtml",
+              "ToolTip": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Teachers\\Create.cshtml",
+              "RelativeToolTip": "ReCornerApplication\\Views\\Teachers\\Create.cshtml",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAiwHsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T08:25:13.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Students\\Create.cshtml",
+              "RelativeDocumentMoniker": "ReCornerApplication\\Views\\Students\\Create.cshtml",
+              "ToolTip": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Students\\Create.cshtml",
+              "RelativeToolTip": "ReCornerApplication\\Views\\Students\\Create.cshtml",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAwwH4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T06:37:27.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TeachersController.cs",
+              "DocumentMoniker": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Controllers\\TeachersController.cs",
+              "RelativeDocumentMoniker": "ReCornerApplication\\Controllers\\TeachersController.cs",
+              "ToolTip": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Controllers\\TeachersController.cs",
+              "RelativeToolTip": "ReCornerApplication\\Controllers\\TeachersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T05:12:07.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ModelData\\Models\\Teacher.cs",
+              "RelativeDocumentMoniker": "ModelData\\Models\\Teacher.cs",
+              "ToolTip": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ModelData\\Models\\Teacher.cs",
+              "RelativeToolTip": "ModelData\\Models\\Teacher.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T05:00:47.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Teachers\\Index.cshtml",
+              "RelativeDocumentMoniker": "ReCornerApplication\\Views\\Teachers\\Index.cshtml",
+              "ToolTip": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Teachers\\Index.cshtml",
+              "RelativeToolTip": "ReCornerApplication\\Views\\Teachers\\Index.cshtml",
+              "ViewState": "AgIAADsAAAAAAAAAAAAQwGMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T03:14:02.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "ReCornerApplication\\Views\\Students\\Index.cshtml",
+              "ToolTip": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Students\\Index.cshtml",
+              "RelativeToolTip": "ReCornerApplication\\Views\\Students\\Index.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAQwHYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T05:58:36.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Teachers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ReCornerApplication\\Views\\Teachers\\Edit.cshtml",
+              "ToolTip": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Teachers\\Edit.cshtml",
+              "RelativeToolTip": "ReCornerApplication\\Views\\Teachers\\Edit.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAiwHIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T09:39:26.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Teachers\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ReCornerApplication\\Views\\Teachers\\Delete.cshtml",
+              "ToolTip": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\Views\\Teachers\\Delete.cshtml",
+              "RelativeToolTip": "ReCornerApplication\\Views\\Teachers\\Delete.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAHQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T09:52:30.67Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

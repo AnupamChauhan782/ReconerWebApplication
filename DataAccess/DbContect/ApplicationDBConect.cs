@@ -18,6 +18,7 @@ namespace DataAccess.DbContect
         }
        public DbSet<Student> ReStudent_table { get; set; }
        public DbSet<Book> ReBook_table { get; set; }
+       public DbSet<Teacher> ReTeacher_table { get; set; }
 
     }
 }
