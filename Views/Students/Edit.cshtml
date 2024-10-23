@@ -1,0 +1,130 @@
+﻿@model ModelData.Models.Student;
+
+<style>
+
+
+    .custom-shadow {
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa;
+        transform: scale(1.01);
+        transition: all 0.3s;
+    }
+
+    .btn-floating {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        font-size: 24px;
+        line-height: 60px;
+        padding: 0;
+        z-index: 1000;
+    }
+
+    .form-container {
+        background: #ffffff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+        .form-container .card {
+            background-color: #ffffff;
+        }
+
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+        .button-group .btn {
+            flex: 1;
+            margin: 0 5px;
+        }
+</style>
+
+<div class="container mt-5">
+    <!-- Unique Form -->
+    <div class="row mb-5">
+        <div class="col-md-8 mx-auto">
+            <div class="form-container p-4">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <h4 class="text-center text-secondary mb-4"><strong>Update Student</strong></h4>
+                        <form method="post" asp-action="Edit">
+                            <input type="hidden" asp-for="StudId" />
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-people-fill"></i></span>
+                                    <input type="text" asp-for="Name" class="form-control" placeholder="Enter Name...">
+                                    <span asp-validation-for="Name" style="color:red"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-people-fill"></i></span>
+                                    <input type="text" asp-for="Address" class="form-control" placeholder="Enter Address...">
+                                    <span asp-validation-for="Address" style="color:red"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-envelope"></i></span>
+                                    <input type="email" asp-for="EmailAddress" class="form-control" placeholder="Email Address..">
+                                    <span asp-validation-for="EmailAddress" style="color:red"></span>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-telephone"></i></span>
+                                    <input type="number" asp-for="Contact" class="form-control" placeholder="Contact..">
+                                    <span asp-validation-for="Contact" style="color:red"></span>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-sign-intersection"></i></span>
+                                    <input type="text" asp-for="Section" class="form-control" placeholder="Section..">
+                                    <span asp-validation-for="Section" style="color:red"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-calendar"></i></span>
+                                    <input type="date" asp-for="DOB" class="form-control" placeholder="Date of Birth..">
+                                    <span asp-validation-for="DOB" style="color:red"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-book"></i></span>
+                                    <select asp-for="Stream" class="form-select">
+                                        <option selected>Choose Stream...</option>
+                                        <option value="1">Developer</option>
+                                        <option value="2">Designer</option>
+                                        <option value="3">Manager</option>
+                                    </select>
+                                    <span asp-validation-for="Stream" style="color:red"></span>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <a asp-action="Index" asp-controller="Students" class="btn btn-danger">Back to List</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -18,28 +18,52 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #f0f2f5;
 }
 
-.login-logout-card ul.nav-tabs{
-    margin:0 0 -12px 0;
+.login-logout-card .card-header {
+    padding: 0;
 }
-.login-logout-card li.nav-tabs {
-    width:50%;
+
+.login-logout-card ul.nav-tabs {
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+
+.login-logout-card li.nav-item {
+    flex: 1;
 }
 
 .login-logout-card a.nav-link {
-  font-size:10px;
-  padding:10px;
-  text-align:center;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    color: #495057;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
 }
+
+    .login-logout-card a.nav-link.active {
+        color: #495057;
+        background-color: #fff;
+        border-bottom-color: transparent;
+    }
 
 .login-logout-card .card-body {
- 
-    padding: 10px 20px;
-    
+    padding: 20px;
 }
 
-.navbar{
-    height:90px;
+a {
+    text-decoration: none;
 }
+
+.navbar {
+    height: 70px;
+}
+footer{
+    height:60px;
+}
+

@@ -6,6 +6,11 @@ namespace ReCornerApplication.Controllers
     [Authorize]
     public class HomeController : Controller
     {
+        private readonly ILogger<HomeController> _logger;
+        public HomeController(ILogger<HomeController> logger)
+        {
+            this._logger = logger;  
+        }
         public IActionResult Index()
         {
             return View();

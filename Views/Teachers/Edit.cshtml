@@ -1,0 +1,134 @@
+﻿@model ModelData.Models.Teacher
+<style>
+
+
+    .custom-shadow {
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa;
+        transform: scale(1.01);
+        transition: all 0.3s;
+    }
+
+    .btn-floating {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        font-size: 24px;
+        line-height: 60px;
+        padding: 0;
+        z-index: 1000;
+    }
+
+    .form-container {
+        background: #ffffff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+        .form-container .card {
+            background-color: #ffffff;
+        }
+
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+        .button-group .btn {
+            flex: 1;
+            margin: 0 5px;
+        }
+</style>
+
+<div class="container mt-5">
+    <!-- Unique Form -->
+    <div class="row mb-5">
+        <div class="col-md-8 mx-auto">
+            <div class="form-container p-4">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <h4 class="text-center text-secondary mb-4"><strong>Update New Teacher</strong></h4>
+                        <form method="post" asp-action="Edit">
+                            <input type="hidden" asp-for="Teach_Id"/>
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-people-fill"></i></span>
+                                    <input type="text" asp-for="Teacher_Name" class="form-control" placeholder="Enter Name...">
+                                    <span asp-validation-for="Teacher_Name" style="color:red"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-people-fill"></i></span>
+                                    <input type="text" asp-for="Address" class="form-control" placeholder="Enter Address...">
+                                    <span asp-validation-for="Address" style="color:red"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-envelope"></i></span>
+                                    <input type="number" asp-for="Contact" class="form-control" placeholder="Contact ..">
+                                    <span asp-validation-for="Contact" style="color:red"></span>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-telephone"></i></span>
+                                    <input type="text" asp-for="Gender" class="form-control" placeholder="Gender..">
+                                    <span asp-validation-for="Gender" style="color:red"></span>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-sign-intersection"></i></span>
+                                    <input type="number" asp-for="FirstBell" class="form-control" placeholder="First Bell..">
+                                    <span asp-validation-for="FirstBell" style="color:red"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-calendar"></i></span>
+                                    <input type="text" asp-for="Section" class="form-control" placeholder="Section..">
+                                    <span asp-validation-for="Section" style="color:red"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-book"></i></span>
+                                    <input type="text" asp-for="Salary" class="form-control" placeholder="Salary..">
+                                    <span asp-validation-for="Salary" style="color:red"></span>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-dark"><i class="bi bi-book"></i></span>
+                                    <input type="text" asp-for="Subject" class="form-control" placeholder="Subject..">
+                                    <span asp-validation-for="Subject" style="color:red"></span>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button type="submit" class="btn btn-primary">Update</button>
+                                <a asp-action="Index" asp-controller="Students" class="btn btn-danger">Back to List</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

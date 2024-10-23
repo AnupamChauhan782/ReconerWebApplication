@@ -1,0 +1,108 @@
+﻿@model IEnumerable<ModelData.ViewModel.BookViewModel>
+<style>
+    .book-card {
+        transition: transform 0.3s;
+        height: 100%;
+    }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+    .book-image {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 24px;
+        box-shadow: 0 2px 5px 1px rgba(64,60,67,.16);
+        max-width: 584px;
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .search-input {
+        flex: 1;
+        border: none;
+        padding: 12px 0;
+        font-size: 16px;
+        outline: none;
+    }
+
+    .search-icon {
+        color: #9aa0a6;
+        fill: currentColor;
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+    }
+
+    .add-book-btn {
+        margin-left: 16px;
+        border-radius: 24px;
+        padding: 10px 20px;
+        font-weight: 500;
+    }
+
+    .card-footer {
+        background-color: transparent;
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .btn-edit, .btn-delete {
+        width: 48%;
+    }
+</style>
+<div class="container mt-5">
+    <h3 class="mb-4 text-primary text-center">Book Collection</h3>
+    <div class="search-container">
+        <div class="search-bar">
+            <svg class="search-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </svg>
+            <input type="text" id="searchInput" class="search-input" placeholder="Search for books...">
+        </div>
+        <a class="btn btn-primary add-book-btn" asp-action="UploadImg" asp-controller="Books">Add Book</a>
+    </div>
+    <div id="bookContainer" class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var book in Model)
+        {
+            <div class="col book-item">
+                <div class="card book-card">
+                    @if (!string.IsNullOrEmpty(book.ImagePath))
+                    {
+                        <img src="@book.ImagePath" class="card-img-top book-image" alt="@book.BookName">
+                    }
+                    else
+                    {
+                        <div class="card-img-top book-image bg-secondary d-flex align-items-center justify-content-center text-white">
+                            No Image
+                        </div>
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title">@book.BookName</h5>
+                        <p class="card-text">Author: @book.AuthorName</p>
+                        <p class="card-text">Price: $@book.Price.ToString("0.00")</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a asp-action="Edit" asp-route-id="@book.BookId" class="btn btn-warning btn-edit">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@book.BookId" asp-controller="Books" class="btn btn-danger btn-delete">Delete</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

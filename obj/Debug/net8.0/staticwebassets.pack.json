@@ -245,6 +245,42 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\wwwroot\\uploads\\1632f8d4-978e-4b14-9fec-89907ad08f2a_book2.webp",
+      "PackagePath": "staticwebassets\\uploads\\1632f8d4-978e-4b14-9fec-89907ad08f2a_book2.webp"
+    },
+    {
+      "Id": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\wwwroot\\uploads\\1b616ce7-f10c-4410-93a6-7d0ac65987e5_cc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1b616ce7-f10c-4410-93a6-7d0ac65987e5_cc.jpg"
+    },
+    {
+      "Id": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\wwwroot\\uploads\\413ff6d9-e4fa-487f-a795-328de45bf756_cc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\413ff6d9-e4fa-487f-a795-328de45bf756_cc.jpg"
+    },
+    {
+      "Id": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\wwwroot\\uploads\\6e6f2afd-47cf-4300-bd47-1df4b3348fd8_cc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6e6f2afd-47cf-4300-bd47-1df4b3348fd8_cc.jpg"
+    },
+    {
+      "Id": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\wwwroot\\uploads\\9c256282-509d-434d-981f-14916027d3d2_book1.webp",
+      "PackagePath": "staticwebassets\\uploads\\9c256282-509d-434d-981f-14916027d3d2_book1.webp"
+    },
+    {
+      "Id": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\wwwroot\\uploads\\b80b19ac-51fe-4e84-b18d-78de35db8f5c_Img.webp",
+      "PackagePath": "staticwebassets\\uploads\\b80b19ac-51fe-4e84-b18d-78de35db8f5c_Img.webp"
+    },
+    {
+      "Id": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\wwwroot\\uploads\\c7fa5cd2-5021-4c79-821d-517daddbd742_download (1).jpg",
+      "PackagePath": "staticwebassets\\uploads\\c7fa5cd2-5021-4c79-821d-517daddbd742_download (1).jpg"
+    },
+    {
+      "Id": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\wwwroot\\uploads\\eb05742b-9903-4528-a5d5-a7aaad2f6a34_cc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\eb05742b-9903-4528-a5d5-a7aaad2f6a34_cc.jpg"
+    },
+    {
+      "Id": "D:\\MVC\\ReCornerApplication\\ReCornerApplication\\ReCornerApplication\\wwwroot\\uploads\\ecd1abe6-eb50-46d8-9e00-f47352170dc5_tech.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ecd1abe6-eb50-46d8-9e00-f47352170dc5_tech.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ReCornerApplication.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

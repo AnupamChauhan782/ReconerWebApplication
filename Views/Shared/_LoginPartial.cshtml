@@ -1,4 +1,6 @@
-﻿@using Microsoft.AspNetCore.Identity;
+﻿
+
+@using Microsoft.AspNetCore.Identity;
 @inject SignInManager<IdentityUser> signInManager;
 @inject UserManager<IdentityUser> userManager;
 
@@ -8,14 +10,13 @@
     {
         <li class="nav-item">
             <a class="text-muted text-dark">
-                Hello @userManager.GetUserName(User);
+                Hello @User.Identity.Name
             </a>
-           
         </li>
         <li class="nav-item">
-            <a class="nav-link text-danger">
-                Logout
-            </a>
+            <form class="form-inline" asp-controller="Account" asp-action="Logout" method="post">
+                <button type="submit" class="nav-link btn btn-link text-danger">Logout</button>
+            </form>
         </li>
     }
     else
@@ -33,3 +34,4 @@
         </li>
     }
 </ul>
+

@@ -29,22 +29,80 @@ namespace ReCornerApplication.Controllers.Auth
                 if(ModelState.IsValid)
                 {
                     var ChkEmail=await _userManager.FindByEmailAsync(registarViewM.Email);
-                    if (ChkEmail == null)
+                    if (ChkEmail != null)
                     {
                         ModelState.AddModelError(string.Empty, "Email already exist");
                         return View(registarViewM);
                     }
+                    var user=new IdentityUser
+                    {
+                        UserName=registarViewM.Email,
+                        Email=registarViewM.Email
+
+                    };
+                    var result = await _userManager.CreateAsync(user, registarViewM.Password);
+                    if (result.Succeeded)
+                    {
+                        await _signInManager.SignInAsync(user, isPersistent: false);
+                        return RedirectToAction("Index", "Home");
+                    }
+                    if (result.Errors.Count() > 0)
+                    {
+                        foreach(var err in result.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, err.Description);
+                        }
+                    }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-
+                throw;
             }
             return View(registarViewM);
         }
         public async Task<IActionResult> Login()
         {
             return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(loginViewM loginViewM)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    IdentityUser checkEmail =await _userManager.FindByEmailAsync(loginViewM.Email);
+                    if (checkEmail == null)
+                    {
+                        ModelState.AddModelError(string.Empty, "Email not found");
+                        return View(loginViewM);
+                    }
+                    if(await _userManager.CheckPasswordAsync(checkEmail, loginViewM.Password) == false)
+                    {
+                        ModelState.AddModelError(string.Empty, "Invalid Ceredentails");
+                        return View(loginViewM);
+                    }
+                    var res = await _signInManager.PasswordSignInAsync(loginViewM.Email, loginViewM.Password, loginViewM.RememberMe, lockoutOnFailure: false);
+                    if (res.Succeeded)
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                    ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
+                }
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return View();
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Login", "Account");  // Changed from "Registar" to "Account"
         }
     }
 }

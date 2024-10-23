@@ -1,3 +1,5 @@
+using BusinessAcess.IRepos;
+using BusinessAcess.Repos;
 using DataAccess.DbContect;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -6,20 +8,22 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IStudentService,StudentService>();
+builder.Services.AddScoped<ITeacherService,TeacherService>();
 builder.Services.AddDbContext<ApplicationDBConect>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DbContect"));
 });
 builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<ApplicationDBConect>().AddDefaultTokenProviders();
-//builder.Services.ConfigureApplicationCookie(opt =>
-//{
-//    opt.AccessDeniedPath = "/Account/Login";
-//    opt.LoginPath = "Account/Login";
-//    opt.LogoutPath = "Account/Logout";
-//    opt.Cookie.Name = "AuthApplication";
-//    opt.ExpireTimeSpan = TimeSpan.FromDays(30);
-//    opt.SlidingExpiration = true;
-//});
+builder.Services.ConfigureApplicationCookie(opt =>
+{
+    opt.AccessDeniedPath = "/Account/Login";
+    opt.LoginPath = "/Account/Login";
+    opt.LogoutPath = "/Account/Logout";
+    opt.Cookie.Name = "AuthApplication";
+    opt.ExpireTimeSpan = TimeSpan.FromDays(30);
+    opt.SlidingExpiration = true;
+});
 
 var app = builder.Build();
 

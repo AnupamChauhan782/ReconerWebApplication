@@ -1,0 +1,100 @@
+﻿@model IEnumerable<ModelData.Models.Teacher>
+
+<style>
+    .custom-shadow {
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa;
+        transform: scale(1.01);
+        transition: all 0.3s;
+        border-radius: 20px;
+    }
+
+    .search-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    #localSearchInput {
+        border-radius: 20px;
+    }
+</style>
+
+<div class="container mt-5">
+    <!-- Search Bar and Button -->
+    <div class="search-container custom-shadow mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-10 mb-3 mb-md-0">
+                <div class="input-group">
+                    <span class="input-group-text bg-primary text-white"><i class="bi bi-search"></i></span>
+                    <input type="text" id="localSearchInput" class="form-control" placeholder="Search teacher...">
+                </div>
+            </div>
+            <div class="col-md-2 text-md-end">
+                <a class="btn btn-success" asp-action="Create" asp-controller="Teachers">
+                    <i class="bi bi-plus-circle"></i> Add Teacher
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Teacher Table -->
+    <div class="card custom-shadow">
+        <div class="card-body">
+            <h4 class="card-title text-secondary text-center mb-4"><strong>Teacher Information</strong> <i class="bi bi-person-lines-fill"></i></h4>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle" id="teacherTable">
+                    <thead class="table">
+                        <tr>
+                            <th>TeachName</th>
+                            <th>Address</th>
+                            <th>Contact</th>
+                            <th>Gen</th>
+                            <th>FirstBell</th>
+                            <th>Section</th>
+                            <th>Salary</th>
+                            <th>Subject</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var items in Model)
+                        {
+                            <tr>
+                                <td>@items.Teacher_Name</td>
+                                <td>@items.Address</td>
+                                <td>@items.Contact</td>
+                                <td>@items.Gender</td>
+                                <td>@items.FirstBell</td>
+                                <td>@items.Section</td>
+                                <td>@items.Salary</td>
+                                <td><span class="badge bg-info">@items.Subject</span></td>
+                                <td>
+                                    <a class="btn btn-sm btn-outline-primary me-1" asp-route-id="@items.Teach_Id" asp-action="Delete" asp-controller="Teachers"><i class="bi bi-trash3"></i></a>
+                                    <a class="btn btn-sm btn-outline-danger" asp-route-id="@items.Teach_Id" asp-action="Edit" asp-controller="Teachers"><i class="bi bi-pencil-square"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#localSearchInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#teacherTable tbody tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+}

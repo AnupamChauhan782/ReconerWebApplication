@@ -2,16 +2,18 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="row  justify-content-center">
-    <div class="col-4 mt-5">
+
+
+<div class="row justify-content-center">
+    <div class="col-md-4 mt-5">
         <div class="card login-logout-card">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
-                        <a class="nav-item" asp-controller="Account"asp-action="Login">Login</a>
+                        <a class="nav-link" asp-controller="Account" asp-action="Login">Login</a>
                     </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-item" asp-controller="Account" asp-action="Registar">Register</a>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Account" asp-action="Registar">Register <i class="bi bi-r-circle"></i></a>
                     </li>
                 </ul>
             </div>
@@ -19,7 +21,6 @@
                 <div class="row justify-content-center">
                     <div class="col-10">
                         @RenderBody()
-
                     </div>
                 </div>
             </div>
@@ -27,6 +28,18 @@
     </div>
 </div>
 
-@section scripts{
-    @await RenderSectionAsync("Scripts",required:false)
+@section scripts {
+    @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        $(function () {
+            let currentPage = location.pathname;
+            $('.nav-tabs li a').each(function () {
+                let $this = $(this);
+                if (currentPage.toLowerCase().indexOf($this.attr('href').toLowerCase()) !== -1) {
+                    $('.nav-tabs li a').removeClass('active');
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
 }

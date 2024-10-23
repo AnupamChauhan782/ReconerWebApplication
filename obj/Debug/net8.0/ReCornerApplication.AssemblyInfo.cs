@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReCornerApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9412f817c33d3cb2288f7350d2fc4d0f4da0e128")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReCornerApplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReCornerApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
